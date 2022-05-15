@@ -5,7 +5,7 @@ rightWristy = 0
 song=""
 function setup(){
 canvas = createCanvas(400, 500)
-canvas.position(475, 125)
+canvas.center(475, 125)
 video = createCapture(VIDEO)
 video.size(400,500)
 video.hide()
@@ -16,7 +16,7 @@ function preload(){
 song = loadSound("music.mp3")
 }
 function draw(){
-image(video,0,0,700,700)
+image(video,0,0,400,500)
 fill("red")
 circle(leftWristx, leftWristy, 20);
 leftWristy=Number(leftWristy)
